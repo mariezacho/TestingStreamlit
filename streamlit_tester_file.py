@@ -16,7 +16,7 @@ def get_customers():
     password = st.secrets["sql"]["password"]
 
     # Create the database connection string
-    connection_string = f"mariadb+mariadbconnector://{user}:{password}@{host}:{port}/{database}"
+    connection_string = f"mysql+pymysql://{user}:{password}@{host}:{port}/{database}"
     
     # Create the SQLAlchemy engine
     engine = create_engine(connection_string)
