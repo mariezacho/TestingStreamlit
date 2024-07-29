@@ -1,5 +1,9 @@
 import streamlit as st
-import sqlalchemy
+import pymysql
+pymysql.install_as_MySQLdb()
+
+# Then you can use SQLAlchemy as usual
+from sqlalchemy import create_engine
 import pandas as pd
 
 def get_customers():
