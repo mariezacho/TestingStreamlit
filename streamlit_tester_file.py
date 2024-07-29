@@ -19,7 +19,7 @@ def get_customers():
     connection_string = f"mariadb+mariadbconnector://{user}:{password}@{host}:{port}/{database}"
     
     # Create the SQLAlchemy engine
-    engine = sqlalchemy.create_engine(connection_string)
+    engine = create_engine(connection_string)
 
     # Define the query
     query = "SELECT id, name FROM connect.operators"
