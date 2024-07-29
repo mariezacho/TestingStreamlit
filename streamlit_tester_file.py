@@ -1,4 +1,5 @@
 import streamlit as st
+import sqlalchemy
 import pymysql
 pymysql.install_as_MySQLdb()
 
